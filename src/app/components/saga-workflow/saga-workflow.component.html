@@ -1,0 +1,19 @@
+<form  [formGroup]="workflow">
+
+<div class="card">
+    <div class="card-header">
+      Cadastro de Workflow
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Crie sua saga com o contexto feature da sua applicação</h5>
+      <p class="card-text">Preencha o nome do campo que represente a ação da feature</p>
+      <div class="mb-3 row form-group">
+        <label for="inputWorkflowName" class="col-sm-2 col-form-label">Workflow Name</label>
+        <div class="col-sm-3">
+          <input type="text" class="form-control" formControlName="inputWorkflowName" id="inputWorkflowName" [required]="true" >
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="cadastrarWorkFlow()">Cadastrar</button>
+    </div>
+  </div>
+</form>
